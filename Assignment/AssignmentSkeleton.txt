@@ -1,0 +1,347 @@
+PROBLEM STATEMENT
+
+
+ENTITY-RELATIONSHIP DIAGRAM
+
+
+DATABASE TABLES
+
+
+-- EXERCISE 1 - ENTITIES AND TABLES
+-- CREATING TABLES
+-- The following is a printout of the text files are used to create and populate the database 
+-- tables:
+
+-- NOTE: Include integrity constraints in your table definitions. Try to make the DBMS 
+-- reject wrong data as much as possible. If some integrity constraints cannot be entered in 
+-- the CREATE command, explain the reason, and enter them with ALTER TABLE 
+-- commands in this section.  
+
+-- EXERCISE 2 - TABLE  OPERATIONS
+-- QUERYING  TABLES
+-- SELECT...FROM...WHERE...
+-- The following command would be used to select all the columns from the . . . table:
+
+-- The following command selects only . . . . . of all . . . .
+
+-- COPYING TABLES
+-- CREATE TABLE...AS...
+-- The following command would be used to copy all the columns and all the rows
+-- of the . . . . table to a new table called  . . . .:
+
+-- The following command would be used to visually check that . . . . is correct:
+
+-- USING THE WHERE CLAUSE
+-- The following command would be used to select the . . . . . of only those . . .  which . . . .
+
+-- COPYING PART OF A TABLE
+-- CREATE...TABLE...AS...
+
+-- The following command would be used to create a table called . . .containing the . . . 
+-- which . . . . from the table . . . .:
+
+-- The following command would be used to check that the table was successfully 
+-- created and desired records were successfully inserted:
+
+-- DELETING  ROWS
+-- DELETE  FROM...WHERE...
+-- The following command would be used to delete . . . from the . . . table:
+
+-- The following command would be used to delete those rows from the . . .table where . . .
+
+-- DELETING ALL ROWS FROM A TABLE
+-- The following command would be used to delete all the rows left in the . . .table.
+
+-- DELETING TABLES
+-- DROP TABLE...
+
+-- The following command would be used to drop the . . . table.
+
+-- LISTING TABLES
+-- SELECT... FROM TAB
+
+-- The following command would be used to list the tables that are owned by the user.
+
+-- EXERCISE 3 - DATA MANIPULATION
+-- DATE COMPARISON WITH RELATIONAL OPERATORS
+-- The following command would be used to display . . .  . . 
+
+-- USING AND AND OR IN THE WHERE CLAUSE
+-- The following command would be used to display . . . .
+
+-- The following command would be used to display . . . 
+
+-- USING ARITHMETIC EXPRESSIONS IN QUERIES
+-- ARITHMETIC IN THE WHERE CLAUSE
+
+-- The following command would be used to select . . .
+
+-- ARITHMETIC IN THE SELECTCLAUSE
+-- The following command would be used to show . . .
+
+-- BETWEEN...
+-- The following command would be used to display . . .
+
+-- USING WILDCARD CHARACTERS
+-- LIKE...
+-- The following command would be used to display . . . 
+
+-- The following command would retrieve . . .
+  
+-- ORDERING ROWS 
+-- ORDER BY...ASCENDING
+-- The following command would be used to select ...
+
+-- ORDER BY...DESCENDING
+-- The following command would be used to select . . .
+
+-- GROUP FUNCTIONS
+-- AVG... 
+-- The following command would be used to calculate the average . . .
+
+-- COUNT...
+-- The following command would be used to count . . .
+
+-- REMOVING DUPLICATE VALUES
+-- DISTINCT...
+
+-- The following command would be used to display . . .
+
+-- EXERCISE 4 - TABLE MODIFICATION
+-- ALTER TABLE... ADD...
+-- The following command adds a numeric column called . . . with a width of . . .to the
+-- . . .table:
+
+-- ALTER TABLE...MODIFY...
+-- The following command would be used to change the . . . column from . . . to . . .
+
+-- UPDATING TABLE DATA
+-- We will use a criteria based update on a partial copy of the . . . table.
+CREATE TABLE . . . AS SELECT * FROM . . .WHERE . . .;
+
+SELECT * FROM . . .
+
+-- UPDATE...WHERE...
+-- The following command . . . .
+
+-- DELETING COLUMNS
+-- The following command would be used to delete the whole column . . . from the 
+-- table . . . and change the table definition accordingly:
+
+-- COMMANDS  COMMIT AND ROLLBACK	
+-- COMMIT
+. .  . .
+-- ROLLBACK
+. . . . .
+-- The following commands create a new record in . . . table, update . . ., and commit 
+-- the finished transaction.
+
+-- EXERCISE 5 - QUERYING  SETS
+-- QUERYING SETS  WHERE... IN...
+-- The following command displays . . .
+
+-- GROUPING QUERY RESULTS
+-- The following command would be used to count the total number of . . . .
+
+-- GROUP BY...
+-- The following command would be used to group . . .
+
+-- GROUPING BY MORE THAN ONE ATTRIBUTE
+-- The following command would be used to . . .  
+
+-- ADVANCED EXAMPLE
+-- A GROUP BY CLAUSE WITH A JOIN AND TWO GROUP FUNCTIONS
+-- The following command displays . . .
+
+-- VIEWS
+-- The following command would be used to create a view which . . . 
+
+-- UPDATABLE VIEWS
+-- The following  UPDATE command may be used to update the . . . table using the . . .  
+-- view. 
+
+-- The following command would be used to drop the . . . view:
+
+-- DROP VIEW...
+
+-- EXERCISE 6 - TABLE JOINS
+-- THE WHERE CLAUSE JOINS TWO TABLES WITH A COMMON FIELD
+SELECT . . . .            
+
+-- A JOIN BETWEEN THE . . . AND . . .TABLES ON  . . .
+-- The following command would be used to display . . .
+
+-- The following command would be used to display . . . 
+
+-- The following command uses a date in the WHERE clause and a column alias and 
+-- would be used to display . . . .
+
+-- Views may be used to simplify or break down complex queries into more manageable 
+-- queries.
+                   		
+-- The following commands would be used to display . . .
+
+-- CREATING AND USING A VIEW WITH A JOIN
+-- The next query uses four tables and incorporates 3 joins.
+
+-- The following command would be used to select . . .
+
+-- JOINING FOUR TABLES
+-- The following command . . .
+
+-- NOTE: Column aliases have been used to reduce the length and improve the readability 
+-- of the result. The alias "DATE" is a single word, but still needs to be in quotes, because 
+-- the word DATE is reserved for the date data type.
+
+-- The following example shows two other aspects of joins  -  EQUI- vs. NON-EQUI 
+-- joins and joining a table to itself.
+
+-- EQUI- AND NON-EQUI JOINS
+-- JOINING A TABLE TO ITSELF WITH A NON-EQUI-JOIN
+-- The following command would be used to perform a non-equi join of a table onto 
+-- itself to show . . . .
+
+-- EXERCISE 7 - SUBQUERIES
+-- The following command would be used to display . . . .
+
+-- WHERE...NOT IN...SUBQUERY
+-- The following examples are based on the subquery below, which returns . . . .
+
+-- The following command would be used to list . . .
+
+-- USING IN...WITH A SUBQUERY
+-- The next example has a main query and two subqueries.
+-- *	The second subquery returns . . . .
+-- *	The first subquery returns . . .
+-- *	The main query returns . . .
+-- USING ALL...WITH A SUBQUERY
+
+-- The next example also has a main query and two subqueries;
+
+-- USING ANY...WITH A SUBQUERY
+
+-- *	The second subquery returns . . . .
+-- *	The first subquery returns . . .
+-- *	The main query returns ...
+
+-- USING EQUALS ('=') WITH A SUBQUERY
+-- The following command would be used to show . . .
+
+ -- USING HAVING... WITH A SUBQUERY
+-- The following command would be used to show . . .
+      
+-- EXERCISE 8 - INDEXES AND FUNCTIONS
+-- CREATE UNIQUE INDEX...
+-- The following command would be used to create a unique index called . . . on the . . . 
+-- column of the . . . table:
+
+-- CREATE INDEX...
+-- The following command would be used to create a secondary index on the ...table 
+-- using a concatenated key of . . .and . . .
+
+-- DROP INDEX...
+-- The following command would be used to drop the concatenated index on the . . . 
+-- and . . . fields of the . . . table:
+
+-- FUNCTIONS WITH DATES
+-- The following commands  would be used to display . . .
+
+-- DATE FORMAT ELEMENTS
+-- The following commands illustrate the use of date formats:
+
+-- WORKING WITH CHARACTERS
+-- The following commands illustrate working with characters:
+
+-- DECODE... AND LIKE...
+-- The DECODE command is used to "translate" one value to another.
+-- The following command would be used to decode . . . to display . . . for . . ., etc:
+
+-- The string . . . in the following command will be used as decoding for all selected . . . 
+-- for which no other decoding was specified:
+
+-- WORKING WITH NULL VALUES
+-- USING THE IS... OPERATOR
+-- The following command would be used to select . . . id that has a corresponding . . .  
+-- of NULL:
+
+-- USING THE NVL... FUNCTION
+-- The following example uses data from the . . . to show how NULL and 0 are treated 
+-- by the NVL function:
+
+-- EXERCISE 9 - FORMATTING QUERY RESULTS
+-- In the query below column aliases are used to 'tidy up' the column naming. 
+
+-- COLUMN ALIAS
+
+-- FORMATTING QUERY RESULTS
+-- CLEAR...
+
+-- SETTING THE PAGESIZE
+-- SET PAGESIZE...
+
+-- FORMATTING COLUMNS
+-- COLUMN, HEADING, FORMAT, AND LIKE
+-- The FORMAT command below is used to set the currency field format . . 
+
+-- The following FORMAT is used for numbers. The . . . field will contain . . .
+
+-- This is another FORMAT, this time for characters. It will format the . . . field to a 
+-- width of . . . characters:
+
+-- The LIKE clause in the following context will apply the format of the . . . column to the . . . . 
+-- column.
+
+-- USING THE BREAK AND COMPUTE COMMANDS
+-- BREAK ON...SKIP
+-- The following command would be used to skip one line whenever the value in the . . . 
+-- field changes.
+
+-- BREAKING ON MULTIPLE  COLUMNS
+. . .
+-- COMPUTE...
+. . .
+-- SET LINESIZE...TTITLE...BTITLE...
+
+-- Now we will restore the original settings:
+
+SET LINESIZE 100 
+TTITLE OFF 
+CLEAR COLUMNS 
+CLEAR COMPUTE
+CLEAR BREAKS
+
+-- EXRCISE 10 - THE DATA DICTIONARY
+-- DISPLAYING TABLES AND  VIEWS
+-- The following command would be used to display the name, type and creator of all 
+-- the tables accessible to the user:
+
+-- DISPLAYING THE QUERY OF A VIEW
+-- The following commands would be used to view the query that created the . . . 
+-- view:
+
+-- DISPLAYING COLUMN DEFINITIONS
+-- The following commands would be used to display the column definitions of the . . . 
+-- columns:
+
+CLEAR COLUMNS
+COLUMN table_name FORMAT a16;
+COLUMN column_name FORMAT a16;
+COLUMN data_type FORMAT a10;
+COLUMN date_length FORMAT a16;
+
+SELECT . . .
+
+-- DISPLAYING INDEXES
+-- The following commands would be used to show the INDEX_NAME, 
+-- TABLE_OWNER, TABLE_NAME, and TABLE_TYPE that correspond to each index 
+-- created by the user.
+
+CLEAR COLUMNS
+COLUMN index_name FORMAT a12;
+COLUMN table_owner FORMAT a12;
+COLUMN table_name FORMAT a12;
+COLUMN table_type FORMAT a12;
+
+SELECT . . . 
+
+

@@ -1,0 +1,75 @@
+--			SQL EXERCISE
+
+
+-- Q1. List all records from the DOG table 
+
+-- Q2. List the last name, first name and the email address of all volunteers from the  
+--     VOLUNTEER table
+
+-- Q3. 	List the last name, first name and the email address of all volunteers from the  
+--      VOLUNTEER table in alphabetical order of the volunteer last name.
+
+-- Q4. 	List all distinct responsibilitioes currently found in the ASSIGNMENT table.
+
+-- Q5. 	Perform the following steps:
+-- 	1.	Use COMMIT to confirm the transactions so far and then delete the 
+--      	treatment of the dog with id 116 by the vet with id 1. Use the table TREATMENT 
+-- 	2.	Show that the record has been deleted.
+
+-- Q7. 	List the ID and the date of birth of all boxer dogs.
+
+-- Q8. 	Calculate the average treatment fee as shown in column FEE
+--      of all dog treatments inventory in the database.
+
+-- Q9. 	Calculate the total value of all fees from the TREATMENT table
+
+-- Q10. How many times was each dog treated?
+
+-- Q11. For each dog, list the total discount in dollars applied.
+
+-- Q12. List the name and the arrival date of each dog that was never adopted.
+
+-- Q13. Veterinarian Arthur Jones (vet ID 3) will be moving to 10 Hillcrest Road 
+--      in Silver Lake, CT. He does not know his new telephone number. 
+--      1.	COMMIT the current state of the database
+--      2.	Update his details in the database.
+--      3.	Check that the changes have been made correctly. 
+--      4.	Reverse the changes using ROLLBACK.
+
+-- Q14 Show the dog with the highest treatment spending in the third quarter of 2003. 
+--     Show the dog ID only.
+
+
+-- Q15. Show the dog with the highest treatment spending in the third quarter of 2003. 
+--      Show the dog ID, name and breed.
+
+-- Q16. For each responsibility found in the ASSIGNMENT table, find the volunteer 
+--	who collected the largest total amount of adoption fees. List the volunteer 
+--	first and last name and the corresponding total amount.
+   
+-- Q17. Perform the following steps:
+--      1. Create a view called PAYMENT, that consists of the veterinarian id, 
+--	   first and last name, and the total payments to this veterinarian 
+--	   recorded in the database.
+--      2. Query the view to find out who was paid the most.
+
+-- Q18.  List the volunteers whose telephone number contains the string pattern '74'.
+   
+-- Q19. Find the doctor with the largest number of dog treatments.
+
+-- Q20. Perform the following steps:
+--       1. Commit all transactions done so far to the database.
+--       2. Check whether the PAYMENT view still exists.
+--       3. If so, delete the view.
+--       4. Can the ROLLBACK command restore the deleted view?
+
+-- Q21. Perform the following steps:
+--      1. Create a PRICE_LIST view with columns DESCRIPTION and AVG_FEE 
+--	   of all disease treatments, the average fee for the treatment of 
+--	   each disease found in the column DESCRIPTION of table TREATMENT.
+
+-- Q22. View the query that created the PRICE_LIST view 
+--      using the data dictionary.
+-- 	NOTE: not all text of the query is available !!
+
+-- Q23. Display the column definitions of the VET table using the data dictionary.

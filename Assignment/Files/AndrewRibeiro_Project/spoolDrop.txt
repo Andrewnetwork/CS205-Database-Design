@@ -1,0 +1,18 @@
+--- spoolDrop.sql 
+--- Andrew Ribeiro 
+--- December 08, 2009
+--- CS 205
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.

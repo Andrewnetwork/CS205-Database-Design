@@ -1,0 +1,625 @@
+--- spoolTesting.txt
+--- Andrew Ribeiro 
+--- December 08, 2009
+--- CS 205
+
+There where errors in my db that I could not understand... 
+
+   VISITID STARTDATE ENDDATE   CUSTOMERID ROOMNUMBER
+---------- --------- --------- ---------- ----------
+         1 12-DEC-09 25-DEC-09          1          1
+         2 12-SEP-09 01-DEC-09          1          1
+         3 10-NOV-09 25-NOV-09          2          7
+         4 02-DEC-09 13-DEC-09          3          2
+         5 02-APR-09 10-MAY-09          4          4
+         6 01-DEC-09 13-DEC-09          5          5
+         7 02-DEC-09 24-DEC-09          6          6
+         8 03-FEB-09 26-DEC-09          7          2
+         9 03-DEC-09 26-DEC-09          8          3
+        10 03-FEB-09 26-DEC-09          9          4
+        11 03-AUG-09 26-DEC-09         10          7
+
+   VISITID STARTDATE ENDDATE   CUSTOMERID ROOMNUMBER
+---------- --------- --------- ---------- ----------
+        12 03-MAR-09 26-JUL-09         11          3
+        13 15-DEC-09 27-DEC-09         11          5
+
+13 rows selected.
+
+
+   VISITID
+----------
+         1
+         2
+         3
+         4
+         5
+         6
+         7
+         8
+         9
+        10
+        11
+
+   VISITID
+----------
+        12
+        13
+
+13 rows selected.
+
+
+Table created.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ VISITID                                   NOT NULL NUMBER(4)
+ STARTDATE                                 NOT NULL DATE
+ ENDDATE                                   NOT NULL DATE
+ CUSTOMERID                                NOT NULL NUMBER(4)
+ ROOMNUMBER                                NOT NULL NUMBER(1)
+
+
+   VISITID STARTDATE ENDDATE   CUSTOMERID ROOMNUMBER
+---------- --------- --------- ---------- ----------
+         1 12-DEC-09 25-DEC-09          1          1
+         2 12-SEP-09 01-DEC-09          1          1
+         4 02-DEC-09 13-DEC-09          3          2
+         6 01-DEC-09 13-DEC-09          5          5
+         7 02-DEC-09 24-DEC-09          6          6
+         8 03-FEB-09 26-DEC-09          7          2
+         9 03-DEC-09 26-DEC-09          8          3
+        10 03-FEB-09 26-DEC-09          9          4
+        11 03-AUG-09 26-DEC-09         10          7
+        13 15-DEC-09 27-DEC-09         11          5
+
+10 rows selected.
+
+CREATE TABLE visitor
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+ERROR:
+ORA-04043: object newTable does not exist
+
+
+SELECT * FROM newTable
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+
+2 rows deleted.
+
+
+11 rows deleted.
+
+
+Table dropped.
+
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+SMALL_DOG                      TABLE
+BIN$d35zxosLVI3gQJiVhjJqLQ==$0 TABLE
+ADOPTER                        TABLE
+RETURN                         TABLE
+RESPONSIBILITY                 TABLE
+BIN$erM2TzN/5OfgQJiVhjIvwg==$0 TABLE
+BIN$erM2TzOK5OfgQJiVhjIvwg==$0 TABLE
+BIN$erM2TzOR5OfgQJiVhjIvwg==$0 TABLE
+BIN$erM2TzOW5OfgQJiVhjIvwg==$0 TABLE
+BIN$erM2TzOb5OfgQJiVhjIvwg==$0 TABLE
+BIN$erM2TzO15OfgQJiVhjIvwg==$0 TABLE
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+BIN$erM2TzO65OfgQJiVhjIvwg==$0 TABLE
+BIN$erM2TzO/5OfgQJiVhjIvwg==$0 TABLE
+BIN$erM2TzPF5OfgQJiVhjIvwg==$0 TABLE
+BIN$erM2TzOj5OfgQJiVhjIvwg==$0 TABLE
+BIN$erM2TzOu5OfgQJiVhjIvwg==$0 TABLE
+BIN$dxnShvTVMPjgQJiVhjIWQw==$0 TABLE
+PHONE_LIST                     TABLE
+DOG                            TABLE
+BIN$eDPGuZfNURvgQJiVhjJ5JQ==$0 TABLE
+VOLUNTEER                      TABLE
+BIN$eDPGuZfOURvgQJiVhjJ5JQ==$0 TABLE
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+ADOPTION                       TABLE
+UPDATELOG                      TABLE
+ASSIGNMENT                     TABLE
+BIN$ej9RhR4PyrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR4SyrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR4VyrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR4YyrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR4byrHgQJiVhjIYFw==$0 TABLE
+TREATMENT                      TABLE
+VET                            TABLE
+BIN$erSL8wyqS2TgQJiVhjJS3Q==$0 TABLE
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+BIN$erSL8wylS2TgQJiVhjJS3Q==$0 TABLE
+RESERVATION                    TABLE
+BIN$erM2TzPN5OfgQJiVhjIvwg==$0 TABLE
+BIN$erSL8wyZS2TgQJiVhjJS3Q==$0 TABLE
+BIN$erSL8wygS2TgQJiVhjJS3Q==$0 TABLE
+BIN$erSL8wywS2TgQJiVhjJS3Q==$0 TABLE
+CUSTOMER                       TABLE
+ROOMTYPE                       TABLE
+ROOM                           TABLE
+VISIT_BACKUP                   TABLE
+BIN$erSL8wy4S2TgQJiVhjJS3Q==$0 TABLE
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+BIN$eji0KZcIiujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZcRiujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZcLiujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZcFiujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZcOiujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZcUiujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZcaiujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZcdiujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZcjiujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZcmiujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZcXiujgQJiVhjJk2w==$0 TABLE
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+BIN$eji0KZcsiujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZcviujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZcgiujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZc1iujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZc4iujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZcpiujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZc7iujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZc+iujgQJiVhjJk2w==$0 TABLE
+BIN$eji0KZcyiujgQJiVhjJk2w==$0 TABLE
+BIN$ej9RhR4AyrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR4DyrHgQJiVhjIYFw==$0 TABLE
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+BIN$ej9RhR4GyrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR4JyrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR4MyrHgQJiVhjIYFw==$0 TABLE
+USTOMER                        TABLE
+BIN$ej9RhR4kyrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR4ryrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR4wyrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR44yrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR49yrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR5NyrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR5SyrHgQJiVhjIYFw==$0 TABLE
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+BIN$ej9RhR5ayrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR5fyrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR53yrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR58yrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR5GyrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR6ByrHgQJiVhjIYFw==$0 TABLE
+BIN$ej9RhR5wyrHgQJiVhjIYFw==$0 TABLE
+VISITOR                        TABLE
+BIN$ej9RhR5nyrHgQJiVhjIYFw==$0 TABLE
+BIN$emTFRKhZI7jgQJiVhjILwA==$0 TABLE
+BIN$emTFRKhgI7jgQJiVhjILwA==$0 TABLE
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+BIN$emTFRKhlI7jgQJiVhjILwA==$0 TABLE
+BIN$emTFRKhtI7jgQJiVhjILwA==$0 TABLE
+BIN$emTFRKhyI7jgQJiVhjILwA==$0 TABLE
+BIN$emTFRKiCI7jgQJiVhjILwA==$0 TABLE
+BIN$emTFRKiHI7jgQJiVhjILwA==$0 TABLE
+BIN$emTFRKiPI7jgQJiVhjILwA==$0 TABLE
+BIN$emTFRKiUI7jgQJiVhjILwA==$0 TABLE
+BIN$emTFRKikI7jgQJiVhjILwA==$0 TABLE
+BIN$emTFRKipI7jgQJiVhjILwA==$0 TABLE
+RESERVATIONCUSTOMER            TABLE
+BIN$emTFRKh7I7jgQJiVhjILwA==$0 TABLE
+
+TNAME                          TABTYPE  CLUSTERID
+------------------------------ ------- ----------
+BIN$emTFRKixI7jgQJiVhjILwA==$0 TABLE
+BIN$emTFRKi2I7jgQJiVhjILwA==$0 TABLE
+BIN$emTFRKidI7jgQJiVhjILwA==$0 TABLE
+SDJIFJ                         VIEW
+
+103 rows selected.
+
+FROM VISIT
+     *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+FROM VISIT
+     *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+FROM VISIT
+     *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+FROM visit
+     *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+FROM visit
+     *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+FROM visit
+     *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+
+Last Name
+--------------------------------------------------------------------------------
+Ribeiro
+Ray
+
+
+Last Name
+--------------------------------------------------------------------------------
+Manto
+Manto
+Mange
+
+
+NAME
+-------------------------
+Andrew Ribeiro
+Blango mango
+Hopskip Mange
+Jake Vogel
+Jean Silva
+Killah Manto
+Lispo Japo
+Manta Ray
+Mat Cambel
+Pal Peto
+Petre Manto
+
+11 rows selected.
+
+
+NAME
+-------------------------
+Petre Manto
+Pal Peto
+Mat Cambel
+Manta Ray
+Lispo Japo
+Killah Manto
+Jean Silva
+Jake Vogel
+Hopskip Mange
+Blango mango
+Andrew Ribeiro
+
+11 rows selected.
+
+
+Average nightly rate
+--------------------
+               93.75
+
+FROM visit
+     *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+
+NAME
+-------------------------
+Andrew Ribeiro
+Jake Vogel
+Jean Silva
+Killah Manto
+Petre Manto
+Hopskip Mange
+Manta Ray
+
+7 rows selected.
+
+ALTER TABLE visit
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+ALTER TABLE visit
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+CREATE TABLE reservationCustomer AS SELECT * FROM customer WHERE customer IN reservation table
+                                                                                         *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended
+
+
+CREATE TABLE reservationCustomer
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+
+CUSTOMERID NAME
+---------- -------------------------
+STREETADDRESS
+--------------------------------------------------------------------------------
+CITY            ST ZIP
+--------------- -- -----
+         1 Andrew Ribeiro
+124 Coalpit Hill Rd Unit #34
+Danbury         CT 06810
+
+         2 Jake Vogel
+14 Blambord St
+Danbury         CT 06810
+
+CUSTOMERID NAME
+---------- -------------------------
+STREETADDRESS
+--------------------------------------------------------------------------------
+CITY            ST ZIP
+--------------- -- -----
+
+         3 Jean Silva
+4 Footers Ln
+Danbury         CT 06810
+
+         6 Killah Manto
+26 Water Man Ln
+
+CUSTOMERID NAME
+---------- -------------------------
+STREETADDRESS
+--------------------------------------------------------------------------------
+CITY            ST ZIP
+--------------- -- -----
+Bethel          CT 09387
+
+         9 Petre Manto
+49 Loper St
+Pops            FL 09383
+
+        11 Hopskip Mange
+
+CUSTOMERID NAME
+---------- -------------------------
+STREETADDRESS
+--------------------------------------------------------------------------------
+CITY            ST ZIP
+--------------- -- -----
+8 Toter Ln
+Bethel          CT 09387
+
+        10 Manta Ray
+23 Cool Man
+Sanga           CA 13847
+
+
+7 rows selected.
+
+
+1 row updated.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ RESERVATIONID                             NOT NULL NUMBER(4)
+ CUSTOMERID                                NOT NULL NUMBER(4)
+ ROOM                                      NOT NULL NUMBER(1)
+ STARTDATE                                 NOT NULL DATE
+ ENDDATE                                            DATE
+
+
+Table altered.
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ RESERVATIONID                             NOT NULL NUMBER(4)
+ CUSTOMERID                                NOT NULL NUMBER(4)
+ ROOM                                      NOT NULL NUMBER(1)
+ STARTDATE                                 NOT NULL DATE
+
+SP2-0042: unknown command ". .  . ." - rest of line ignored.
+
+Commit complete.
+
+DELETE FROM visit
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+
+Rollback complete.
+
+
+Commit complete.
+
+
+1 row created.
+
+
+1 row updated.
+
+
+Commit complete.
+
+
+NAME
+-------------------------
+Andrew Ribeiro
+Jake Vogel
+Jean Silva
+Killah Manto
+Petre Manto
+Hopskip Mange
+Manta Ray
+
+7 rows selected.
+
+
+Number of reservations
+----------------------
+                    10
+
+FROM visit
+     *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+
+View created.
+
+
+1 row updated.
+
+
+View dropped.
+
+FROM customer,visit
+              *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+FROM customer,visit
+              *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+FROM customer,visit,room,roomType
+              *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+FROM visit x, visit y
+              *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+                     FROM visit)
+                          *
+ERROR at line 4:
+ORA-00942: table or view does not exist
+
+
+
+No reservation customers
+-------------------------
+Blango mango
+Pal Peto
+Sam Peters
+Lispo Japo
+Mat Cambel
+
+
+      TYPE
+----------
+         4
+
+
+Index created.
+
+
+Index created.
+
+FROM customer,visit
+              *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+FROM visit
+     *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+
+CUSTOMERID DECODE(CUSTOME
+---------- --------------
+         1 Andrew Ribeiro
+
+
+current_date
+-----------------
+DEC-2009
+
+
+ROOMNUMBER NIGHTLYRATE
+---------- -----------
+         1          50
+         2          50
+         4          75
+         5         100
+         6         100
+         7         150
+
+6 rows selected.
+
+FROM visit
+     *
+ERROR at line 2:
+ORA-00942: table or view does not exist
+
+
+UPDATE visit
+       *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+
+1 row deleted.
+
+DELETE FROM visit
+            *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+                             FROM visit
+                                  *
+ERROR at line 4:
+ORA-00942: table or view does not exist
+
+
+
+2 rows deleted.
+
+             FROM visit,room,roomType
+                  *
+ERROR at line 3:
+ORA-00942: table or view does not exist
